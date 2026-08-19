@@ -101,9 +101,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-art">
-            <div className="hero-frame"><img src={IMAGES.heroGarba} alt="Community dancing Garba together" /></div>
-            <div className="hero-sticker"><span>Celebrate</span><strong>with<br />purpose</strong><ArrowDownRight size={23} /></div>
-            <div className="sunburst" aria-hidden="true" />
+            <div className="hero-frame"><img src={IMAGES.heroGarba} alt="Celebrate with purpose - Navratri Raas Garba" /></div>
           </div>
         </section>
 
@@ -120,7 +118,9 @@ export default function Home() {
             <div className="story-heading"><h2>You're coming to celebrate.<br /><i>Why not make</i> your celebration mean more?</h2><div className="brush-line" /></div>
             <div className="story-copy"><p>Garba brings us together. It reminds us of home, of family, of traditions passed from one generation to the next.</p><p>This year, let that feeling travel a little farther.</p><p>Your celebration can help support children in India — giving them opportunities to learn, grow and dream of a better tomorrow.</p><button className="inline-cta" onClick={() => scrollToId("donate")}>Make my celebration count <ChevronRight size={18} /></button></div>
           </div>
-          <div className="video-card"><img src={IMAGES.childrenHope} alt="Children smiling together" /><div className="video-overlay" /><div className="video-copy"><span className="eyebrow light"><span className="eyebrow-dot" /> A little more than a night out</span><h3>Your celebration<br />can change a life.</h3><p>One night of celebration can become a year of hope for someone else.</p></div><button className="play-button" aria-label="Play approved cause video"><CirclePlay size={50} strokeWidth={1.5} /></button><span className="video-note">Approved footage coming soon</span></div>
+          <div className="video-card">
+            <img src={IMAGES.childrenHope} alt="Your celebration can change a life - A little more than a night out" />
+          </div>
         </section>
 
         <section className="cause-section">
@@ -138,7 +138,7 @@ export default function Home() {
 
         <section className="tickets-section" id="tickets"><div className="section-stamp ticket-stamp-mark"><RaasMark className="brand-mark" /></div><div className="ticket-art"><img src={IMAGES.ticketGarba} alt="Vibrant Navratri Raas Garba celebration" /><div className="ticket-stamp">come<br /><strong>dance</strong></div></div><div className="ticket-copy"><div className="section-kicker">04 / join the night</div><h2>Come for the Garba.<br /><i>Stay for the cause.</i></h2><div className="ticket-details"><span><CalendarDays size={20} /><b>October 16, 2026</b></span><span><MapPin size={20} /><b>Old Bridge High School</b><small>4209 County Rd 516 · Matawan, NJ 07747</small></span></div><div className="ticket-price"><span>Event pass <small>includes light food</small></span><strong>$30</strong></div><button className="button button-dark full-button" onClick={() => window.alert("Ticket checkout placeholder: connect this action to Zeffy.")}>Get your pass <ArrowUpRight size={18} /></button><p className="ticket-upsell">Want to make your night mean even more? <button onClick={() => scrollToId("donate")}>Add a donation with your pass.</button></p></div></section>
 
-        <section className="sponsor-section" id="sponsor"><div className="sponsor-copy"><div className="section-kicker">05 / grow the circle</div><h2>Put your name<br /><span>behind the night.</span></h2><p>Help bring a meaningful cultural celebration to life while standing with a cause that reaches children in India.</p><button className="button button-primary" onClick={() => window.alert("Sponsorship inquiry placeholder: connect this to WhatsApp.")}>Become a sponsor <ArrowUpRight size={18} /></button><button className="volunteer-link" onClick={() => window.alert("Volunteer inquiry placeholder: connect this to WhatsApp.")}>Join as a volunteer <ArrowUpRight size={16} /></button></div><div className="sponsor-art"><img src={IMAGES.communitySponsor} alt="Community planning together" /><div className="sponsor-quote">“A celebration<br /><em>that travels</em><br />farther.”</div></div></section>
+        <section className="sponsor-section" id="sponsor"><div className="sponsor-copy"><div className="section-kicker">05 / grow the circle</div><h2>Put your name<br /><span>behind the night.</span></h2><p>Help bring a meaningful cultural celebration to life while standing with a cause that reaches children in India.</p><button className="button button-primary" onClick={() => window.alert("Sponsorship inquiry placeholder: connect this to WhatsApp.")}>Become a sponsor <ArrowUpRight size={18} /></button><button className="volunteer-link" onClick={() => window.alert("Volunteer inquiry placeholder: connect this to WhatsApp.")}>Join as a volunteer <ArrowUpRight size={16} /></button></div><div className="sponsor-art"><img src={IMAGES.communitySponsor} alt="Community planning together - A celebration that travels farther" /></div></section>
       </main>
 
       <footer className="site-footer"><div className="footer-brand"><RaasMark className="brand-mark" /><span><strong>NAVRATRI RAAS GARBA</strong><small>Celebrate with purpose · 2026</small></span></div><p>One night. One community.<br />A little more hope.</p><div className="footer-links"><a href="#donate">Donate</a><a href="#sponsor">Sponsor</a><a href="#tickets">Tickets</a></div></footer>
