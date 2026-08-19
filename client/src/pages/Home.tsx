@@ -88,7 +88,6 @@ export default function Home() {
       <main id="top">
         <section className="hero-section">
           <div className="hero-copy">
-            <p className="eyebrow"><span className="eyebrow-dot" /> Navratri Raas Garba 2026</p>
             <h1>This Navratri,<br /><span>let your celebration</span><br />mean more.</h1>
             <p className="hero-intro">Come together for an unforgettable night of Garba, music, family and community — while helping create brighter futures for children in India.</p>
             <div className="hero-buttons">
