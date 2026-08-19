@@ -101,7 +101,35 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-art">
-            <div className="hero-frame"><img src={IMAGES.heroGarba} alt="Celebrate with purpose - Navratri Raas Garba" /></div>
+            <div className="sunburst" aria-hidden="true">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="46" stroke="#ea7035" strokeWidth="1" strokeDasharray="3 3" opacity="0.6" />
+                <circle cx="50" cy="50" r="38" stroke="#ea7035" strokeWidth="0.8" opacity="0.4" />
+                {Array.from({ length: 24 }).map((_, i) => {
+                  const angle = (i * 15 * Math.PI) / 180;
+                  return (
+                    <line
+                      key={i}
+                      x1="50"
+                      y1="50"
+                      x2={50 + 46 * Math.cos(angle)}
+                      y2={50 + 46 * Math.sin(angle)}
+                      stroke="#ea7035"
+                      strokeWidth="0.9"
+                      opacity="0.45"
+                    />
+                  );
+                })}
+              </svg>
+            </div>
+            <div className="hero-frame">
+              <img src={IMAGES.heroGarba} alt="Celebrate with purpose - Navratri Raas Garba" />
+            </div>
+            <div className="hero-sticker">
+              <span>CELEBRATE</span>
+              <strong>with<br />purpose</strong>
+              <ArrowDownRight size={22} />
+            </div>
           </div>
         </section>
 
